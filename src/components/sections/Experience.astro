@@ -1,0 +1,30 @@
+---
+import Section from "@/components/Section.astro";
+import TimedData from "@/components/TimedData.astro";
+
+import { work } from '@cv';
+
+---
+
+<Section title="Experience">
+    <ul>
+        {work.map(({ name, position, startDate, endDate, summary }) => {
+            const startYear = new Date(startDate).getFullYear();
+            const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Present";
+            const years = `${startYear} - ${endYear}`;
+            return (
+                <li>
+                    <TimedData title={name} subtitle={position} time={years} description={summary} />
+                </li>
+            )
+        })}
+    </ul>
+</Section>
+
+<style>
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+</style>

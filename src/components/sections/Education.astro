@@ -1,0 +1,22 @@
+---
+import Section from "@/components/Section.astro";
+import TimedData from "@/components/TimedData.astro";
+
+import { education } from '@cv';
+
+---
+
+<Section title="Education">
+    <ul>
+        {education.map(({ institution, area, studyType, startDate, endDate }) => {
+            const startYear = new Date(startDate).getFullYear();
+            const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Present";
+            const years = `${startYear} - ${endYear}`;
+            return (
+                <li>
+                    <TimedData title={institution} subtitle={area} time={years} description={studyType} />
+                </li>
+            )
+        })}
+    </ul>
+</Section>
