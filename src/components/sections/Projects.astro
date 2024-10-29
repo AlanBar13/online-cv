@@ -7,13 +7,13 @@ import { projects } from '@cv';
 
 <Section title="Projects">
     <ul>
-        {projects.map(({ url, description, highlights, name, isActive }) => {
+        {projects.map(({ description, highlights, name, isActive }) => {
             return (
                 <li>
                     <article>
                         <header>
                             <h3>
-                                <a href={url} title={`See project ${name}`}>
+                                <a title={`See project ${name}`}>
                                     {name}
                                 </a>
                                 {
