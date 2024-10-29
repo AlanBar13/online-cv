@@ -6,7 +6,7 @@
       "email": "alan.g.bardales@gmail.com",
       "phone": "+524423977484",
       "url": "https://johndoe.com",
-      "summary": "Develop myself in a company that promotes the use of technology to improve the lifestyle of the people, to innovate and create new products. Using state-of-the-art resources where new technologies are included and working with them. Always be at the forefront of new technologies learning to develop in them.",
+      "summary": "Passionate about contributing to a company that leverages technology to enhance people's lives, drive innovation, and create impactful products. I aim to work with cutting-edge tools and technologies, continuously advancing my skills to stay at the forefront of industry trends and developments.",
       "location": {
         "address": "Av. del Marques Num. 10, Rinconada la Redonda, int. 29",
         "postalCode": "76246",
@@ -31,46 +31,30 @@
       {
         "name": "GE Aerospace",
         "position": "Software Engineer",
-        "url": "https://company.com",
         "startDate": "2022-09-20",
         "endDate": null,
-        "summary": "Part of the team responsible for the development of the software used in the aerospace industry.",
-        "highlights": [
-          "Started the company"
-        ]
+        "summary": "Part of the team responsible for the development of the Event Review Module on Aviation Insights Portal."
       },
       {
         "name": "Solo Trucking",
         "position": "Full Stack Developer",
-        "url": "https://company.com",
         "startDate": "2021-07-12",
         "endDate": "2022-09-01",
-        "summary": "Development and support of load management systems. - Design and implementation of full-stack features/services that are scalable, highly-available, and deployed via CI/CD. - Participation in all-aspects of the engineering life-cycle including project planning, designing and implementing features. - Team Lead for the new loads management system project and SOLO App project refactor. - Technological infrastructure planning. - Requirements assessment. Technologies used: Nodejs(Backend), Vue(Frontend), Heroku, AWS (S3, Lambda), React Native.",
-        "highlights": [
-          "Started the company"
-        ]
+        "summary": "Development and support of load management systems. - Design and implementation of full-stack features/services that are scalable, highly-available, and deployed via CI/CD. - Participation in all-aspects of the engineering life-cycle including project planning, designing and implementing features. - Team Lead for the new loads management system project and SOLO App project refactor. - Technological infrastructure planning. - Requirements assessment. Technologies used: Nodejs(Backend), Vue(Frontend), Heroku, AWS (S3, Lambda), React Native."
       },
       {
         "name": "Huawei Latinoamerica",
         "position": "Site Reliability Engineer",
-        "url": "https://company.com",
         "startDate": "2020-03-12",
         "endDate": "2021-07-01",
-        "summary": "Support for the Huawei Cloud on Storage Technology.  - Level 2 Support for the Elastic Volume Service. - Automation Scripts and creation of dashboards. - API Integration. - Ticket Handling. - Alarm Handling. - Change Management. - Linux Servers Administration. Technologies used: Openstack, Python, Shell.",
-        "highlights": [
-          "Started the company"
-        ]
+        "summary": "Support for the Huawei Cloud on Storage Technology.  - Level 2 Support for the Elastic Volume Service. - Automation Scripts and creation of dashboards. - API Integration. - Ticket Handling. - Alarm Handling. - Change Management. - Linux Servers Administration. Technologies used: Openstack, Python, Shell."
       },
       {
         "name": "Tecnologico de Monterrey",
         "position": "Especialista de TI",
-        "url": "https://company.com",
         "startDate": "2016-09-12",
         "endDate": "2020-03-01",
-        "summary": "",
-        "highlights": [
-          "Started the company"
-        ]
+        "summary": ""
       }
     ],
     "volunteer": [{
@@ -86,16 +70,12 @@
     }],
     "education": [
       {
-        "institution": "University",
-        "url": "https://institution.com/",
-        "area": "Software Development",
+        "institution": "Tecnologico de Monterrey",
+        "area": "Computer and Electronic Engineering",
         "studyType": "Bachelor",
         "startDate": "2011-01-01",
         "endDate": "2013-01-01",
-        "score": "4.0",
-        "courses": [
-          "DB1101 - Basic SQL"
-        ]
+        "score": "8.5"
       }
     ],
     "awards": [{
@@ -119,13 +99,46 @@
     }],
     "skills": [
       {
-        "name": "Web Development",
-        "level": "Master",
-        "keywords": [
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ]
+        "name": "Full Stack Development"
+      },
+      {
+        "name": "Javascript / Typescript"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "React"
+      },
+      {
+        "name": "Nextjs"
+      },
+      {
+        "name": "Astro"
+      },
+      {
+        "name": "Angular"
+      },
+      {
+        "name": "Vue"
+      },
+      {
+        "name": "Blazor"
+      },
+      {
+        "name": "NodeJs"
+      },
+      {
+        "name": "ExpressJs"
+      },
+      {
+        "name": "Nestjs"
+      },
+      {
+        "name": "PostgreSQL"
+      },
+      {
+        "name": "MongoDB"
       }
     ],
     "languages": [{
@@ -145,14 +158,23 @@
     }],
     "projects": [
       {
-        "name": "Project",
-        "startDate": "2019-01-01",
-        "endDate": "2021-01-01",
-        "description": "Description...",
+        "name": "FOS (Food Order System)",
+        "description": "A fullstack app that manage the food orders of restaurants in the city of Queretaro, Mexico. It is a full stack app built with React and NodeJS. The app is used by the restaurants to manage their orders and payments. The app also has a dashboard that allows the restaurants to see the status of their orders and payments.",
         "highlights": [
-          "Won award at AIHacks 2016"
+          "React",
+          "NodeJs",
+          "PostgreSQL"
         ],
-        "url": "https://project.com/",
+        "isActive": false
+      },
+      {
+        "name": "Condo App",
+        "description": "A fullstack app to manage Condos (Fraccionamientos). Giving tools to the administrators to manage the properties, send notifications, announcements and requests visitors.",
+        "highlights": [
+          "Nextjs",
+          "Nestjs",
+          "PostgreSQL"
+        ],
         "isActive": true
       }
     ]
