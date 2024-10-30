@@ -6,18 +6,22 @@ import { projects } from '@cv';
 ---
 
 <Section title="Personal Projects">
+    <div class="project-status no-print">
+        <span class="project-enabled">&bull;</span>
+        <p>Project in development</p>
+    </div>
     <ul>
-        {projects.map(({ description, highlights, name, isActive }) => {
+        {projects.map(({ description, highlights, name, isActive, url }) => {
             return (
                 <li>
                     <article>
                         <header>
                             <h3>
-                                <a title={`See project ${name}`}>
+                                <a href={url} title={`See project ${name}`} target="_blank">
                                     {name}
                                 </a>
                                 {
-                                    isActive ? <span>&bull;</span> : <span class="disabled">&bull;</span>
+                                    isActive ? <span class="project-enabled no-print">&bull;</span> : <span class="project-disabled no-print">&bull;</span>
                                 }
                             </h3>
                             <p>{description}</p>
@@ -39,6 +43,11 @@ import { projects } from '@cv';
 </Section>
 
 <style>
+    .project-status {
+        display: inline-flex;
+        gap: 4px;
+    }
+
     ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -63,11 +72,11 @@ import { projects } from '@cv';
         margin-bottom: 4px;
     }
 
-    article h3 span {
+    .project-enabled {
         color: #07e43e;
     }
 
-    article h3 span.disabled {
+    .project-disabled {
         color: #d61d05;
     }
 

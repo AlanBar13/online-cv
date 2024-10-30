@@ -33,28 +33,28 @@
         "position": "Software Engineer",
         "startDate": "2022-09-20",
         "endDate": null,
-        "summary": "Part of the team responsible for the development of the Event Review Module on Aviation Insights Portal."
+        "summary": "Part of the team responsible for the development of the Event Review Module on the Aviation Insights Portal."
       },
       {
         "name": "Solo Trucking",
         "position": "Full Stack Developer",
         "startDate": "2021-07-12",
         "endDate": "2022-09-01",
-        "summary": "Development and support of load management systems. - Design and implementation of full-stack features/services that are scalable, highly-available, and deployed via CI/CD. - Participation in all-aspects of the engineering life-cycle including project planning, designing and implementing features. - Team Lead for the new loads management system project and SOLO App project refactor. - Technological infrastructure planning. - Requirements assessment. Technologies used: Nodejs(Backend), Vue(Frontend), Heroku, AWS (S3, Lambda), React Native."
+        "summary": "Development and support of load management systems, including the design and implementation of scalable, highly available full-stack features and services deployed via CI/CD pipelines. Responsibilities span the engineering life cycle, covering project planning, feature design, and implementation. Additionally, served as Team Lead for the new loads management system project and the SOLO App project refactor, while contributing to technological infrastructure planning and requirements assessment. Technologies used include Node.js for backend development, Vue for frontend, and deployment platforms such as Heroku and AWS (S3, Lambda), along with React Native for mobile solutions."
       },
       {
         "name": "Huawei Latinoamerica",
         "position": "Site Reliability Engineer",
         "startDate": "2020-03-12",
         "endDate": "2021-07-01",
-        "summary": "Support for the Huawei Cloud on Storage Technology.  - Level 2 Support for the Elastic Volume Service. - Automation Scripts and creation of dashboards. - API Integration. - Ticket Handling. - Alarm Handling. - Change Management. - Linux Servers Administration. Technologies used: Openstack, Python, Shell."
+        "summary": "Provided support for Huawei Cloud Storage Technology, specifically as Level 2 support for the Elastic Volume Service, with tasks including automation script development, dashboard creation, and API integration. Additional responsibilities involved ticket and alarm handling, change management, and Linux server administration. Technologies utilized included OpenStack, Python, and Shell scripting."
       },
       {
         "name": "Tecnologico de Monterrey",
         "position": "Especialista de TI",
         "startDate": "2016-09-12",
         "endDate": "2020-03-01",
-        "summary": ""
+        "summary": "Responsible for the development, maintenance, and support of official software, web pages, and databases, along with technical support for both physical and virtual servers. Work included creating full-stack web applications using React, administering databases (SQL, MySQL), software maintenance, and Windows Server administration. Technologies used include React, PHP, and MySQL."
       }
     ],
     "volunteer": [{
@@ -73,9 +73,17 @@
         "institution": "Tecnologico de Monterrey",
         "area": "Computer and Electronic Engineering",
         "studyType": "Bachelor",
-        "startDate": "2011-01-01",
-        "endDate": "2013-01-01",
+        "startDate": "2010-06-01",
+        "endDate": "2015-06-01",
         "score": "8.5"
+      },
+      {
+        "institution": "영남대학교 (Yeungnam University)",
+        "area": "Computer Science",
+        "studyType": "International Exchange Program",
+        "startDate": "2014-01-01",
+        "endDate": "2014-06-01",
+        "score": "8.0"
       }
     ],
     "awards": [{
@@ -139,6 +147,9 @@
       },
       {
         "name": "MongoDB"
+      },
+      {
+        "name": "Golang"
       }
     ],
     "languages": [{
@@ -158,8 +169,20 @@
     }],
     "projects": [
       {
+        "name": "Condo App",
+        "url": "https://github.com/AlanBar13/condo-server",
+        "description": "A fullstack app to manage Condos (Fraccionamientos). Giving tools to the administrators to manage the properties, send notifications, announcements and requests visitors.",
+        "highlights": [
+          "Nextjs",
+          "Nestjs",
+          "PostgreSQL"
+        ],
+        "isActive": true
+      },
+      {
         "name": "FOS (Food Order System)",
-        "description": "A fullstack app that manage the food orders of restaurants in the city of Queretaro, Mexico. It is a full stack app built with React and NodeJS. The app is used by the restaurants to manage their orders and payments. The app also has a dashboard that allows the restaurants to see the status of their orders and payments.",
+        "url": "https://github.com/AlanBar13/FOS",
+        "description": "A fullstack app that manage the food orders of restaurants in the city of Queretaro, Mexico. The app is used by the restaurants to manage their orders and payments. The app also has a dashboard that allows the restaurants to see the status of their orders and payments.",
         "highlights": [
           "React",
           "NodeJs",
@@ -168,14 +191,15 @@
         "isActive": false
       },
       {
-        "name": "Condo App",
-        "description": "A fullstack app to manage Condos (Fraccionamientos). Giving tools to the administrators to manage the properties, send notifications, announcements and requests visitors.",
+        "name": "BOLXS tickets",
+        "url": "https://github.com/AlanBar13/bolxs-app-nextjs",
+        "description": "Developed a full-stack system for concert ticket distribution and purchase, featuring event creation and management, cart functionality, real-time order management, and online payment integration with PayPal.",
         "highlights": [
           "Nextjs",
-          "Nestjs",
+          "Golang",
           "PostgreSQL"
         ],
-        "isActive": true
+        "isActive": false
       }
     ]
   }
