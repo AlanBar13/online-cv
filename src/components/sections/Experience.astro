@@ -2,8 +2,11 @@
 import Section from "@/components/Section.astro";
 import TimedData from "@/components/TimedData.astro";
 
-import { work } from '@cv';
+interface Props {
+    work: typeof import('@cv').work;
+}
 
+const { work } = Astro.props;
 ---
 
 <Section title="Experience">

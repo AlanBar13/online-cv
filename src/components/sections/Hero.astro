@@ -8,8 +8,11 @@ import Linkedin from '@/components/icons/LinkedIn.astro';
 import WorldMap from '@/components/icons/WorldMap.astro';
 import Github from '@/components/icons/GitHub.astro';
 
-const { name, label, image, location, profiles, phone, email } = basics;
-const { city, region } = location;
+interface Props {
+    basics: typeof basics;
+}
+
+const { name, label, image, email, phone, location: { city, region }, profiles } = Astro.props.basics;
 
 const SOCIALS: Record<string, any> = {
     X,

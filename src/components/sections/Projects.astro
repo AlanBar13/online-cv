@@ -1,7 +1,11 @@
 ---
 import Section from "@/components/Section.astro";
 
-import { projects } from '@cv';
+interface Props {
+    projects: typeof import('@cv').projects;
+}
+
+const { projects } = Astro.props;
 
 ---
 

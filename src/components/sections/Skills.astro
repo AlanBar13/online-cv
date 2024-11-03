@@ -1,8 +1,11 @@
 ---
 import Section from "@/components/Section.astro";
 
-import { skills } from '@cv';
+interface Props {
+    skills: typeof import('@cv').skills;
+}
 
+const { skills } = Astro.props;
 ---
 
 <Section title="Skills">

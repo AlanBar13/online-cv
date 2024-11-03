@@ -57,17 +57,6 @@
         "summary": "Responsible for the development, maintenance, and support of official software, web pages, and databases, along with technical support for both physical and virtual servers. Work included creating full-stack web applications using React, administering databases (SQL, MySQL), software maintenance, and Windows Server administration. Technologies used include React, PHP, and MySQL."
       }
     ],
-    "volunteer": [{
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
-      ]
-    }],
     "education": [
       {
         "institution": "Tecnologico de Monterrey",
@@ -86,25 +75,6 @@
         "score": "8.0"
       }
     ],
-    "awards": [{
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
-    }],
-    "certificates": [{
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
-    }],
-    "publications": [{
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "url": "https://publication.com",
-      "summary": "Description…"
-    }],
     "skills": [
       {
         "name": "Full Stack Development"
@@ -155,17 +125,6 @@
     "languages": [{
       "language": "English",
       "fluency": "Native speaker"
-    }],
-    "interests": [{
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }],
-    "references": [{
-      "name": "Jane Doe",
-      "reference": "Reference…"
     }],
     "projects": [
       {

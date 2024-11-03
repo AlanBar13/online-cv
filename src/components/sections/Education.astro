@@ -2,7 +2,11 @@
 import Section from "@/components/Section.astro";
 import TimedData from "@/components/TimedData.astro";
 
-import { education } from '@cv';
+interface Props {
+    education: typeof import('@cv').education;
+}
+
+const { education } = Astro.props;
 
 ---
 
