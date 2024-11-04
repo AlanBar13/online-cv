@@ -1,164 +1,154 @@
 {
-    "basics": {
-      "name": "Alan Gustavo Bardales Mendoza",
-      "label": "Full Stack developer con mas de 7 años de experiencia.",
-      "image": "/me.webp",
-      "email": "alan.g.bardales@gmail.com",
-      "phone": "+524423977484",
-      "url": "https://johndoe.com",
-      "summary": "Apasionado por contribuir a una empresa que aprovecha la tecnología para mejorar la vida de las personas, impulsar la innovación y crear productos impactantes. Mi objetivo es trabajar con herramientas y tecnologías de vanguardia, avanzando continuamente en mis habilidades para mantenerme a la vanguardia de las tendencias y desarrollos de la industria.",
-      "location": {
-        "address": "Av. del Marques Num. 10, Rinconada la Redonda, int. 29",
-        "postalCode": "76246",
-        "city": "Queretaro",
-        "countryCode": "MX",
-        "region": "Mexico"
-      },
-      "profiles": [
-        {
-          "network": "Linkedin",
-          "username": "alan-bardales",
-          "url": "https://www.linkedin.com/in/alan-bardales/"
-        },
-        {
-          "network": "Github",
-          "username": "AlanBar13",
-          "url": "https://github.com/AlanBar13"
-        }
-      ]
+  "basics": {
+    "name": "Alan Gustavo Bardales Mendoza",
+    "label": "Full Stack developer con mas de 7 años de experiencia.",
+    "image": "/me.webp",
+    "email": "alan.g.bardales@gmail.com",
+    "phone": "+524423977484",
+    "url": "https://johndoe.com",
+    "summary": "Apasionado por contribuir a una empresa que aprovecha la tecnología para mejorar la vida de las personas, impulsar la innovación y crear productos impactantes. Mi objetivo es trabajar con herramientas y tecnologías de vanguardia, avanzando continuamente en mis habilidades para mantenerme a la vanguardia de las tendencias y desarrollos de la industria.",
+    "location": {
+      "address": "Av. del Marques Num. 10, Rinconada la Redonda, int. 29",
+      "postalCode": "76246",
+      "city": "Queretaro",
+      "countryCode": "MX",
+      "region": "Mexico"
     },
-    "work": [
+    "profiles": [
       {
-        "name": "GE Aerospace",
-        "position": "Software Engineer",
-        "startDate": "2022-09-20",
-        "endDate": null,
-        "summary": "Parte del equipo responsable del modulo de Event Review en el Aviation Insights Portal."
+        "network": "Linkedin",
+        "username": "alan-bardales",
+        "url": "https://www.linkedin.com/in/alan-bardales/"
       },
       {
-        "name": "Solo Trucking",
-        "position": "Full Stack Developer",
-        "startDate": "2021-07-12",
-        "endDate": "2022-09-01",
-        "summary": "Desarrollo y soporte de sistemas de gestión de carga, incluyendo el diseño e implementación de características y servicios full-stack escalables y altamente disponibles, implementados mediante pipelines de CI/CD. Las responsabilidades abarcan todo el ciclo de ingeniería, desde la planificación de proyectos, el diseño de características y la implementación. Además, desempeñé el rol de Líder de Equipo para el proyecto del nuevo sistema de gestión de carga y la refactorización del proyecto de la aplicación SOLO, contribuyendo también a la planificación de infraestructura tecnológica y evaluación de requisitos. Las tecnologías utilizadas incluyen Node.js para el desarrollo backend, Vue para el frontend, y plataformas de despliegue como Heroku y AWS (S3, Lambda), además de React Native para soluciones móviles."
-      },
-      {
-        "name": "Huawei Latinoamerica",
-        "position": "Site Reliability Engineer",
-        "startDate": "2020-03-12",
-        "endDate": "2021-07-01",
-        "summary": "Brindé soporte para la Tecnología de Almacenamiento en la Nube de Huawei, específicamente como soporte de Nivel 2 para el Servicio de Volumen Elástico, con tareas que incluyeron el desarrollo de scripts de automatización, creación de dashboards e integración de API. Las responsabilidades adicionales incluyeron manejo de tickets y alarmas, gestión de cambios y administración de servidores Linux. Las tecnologías utilizadas incluyeron OpenStack, Python y scripting en Shell."
-      },
-      {
-        "name": "Tecnologico de Monterrey",
-        "position": "Especialista de TI",
-        "startDate": "2016-09-12",
-        "endDate": "2020-03-01",
-        "summary": "Responsable del desarrollo, mantenimiento y soporte de software oficial, páginas web y bases de datos, además de brindar soporte técnico para servidores físicos y virtuales. El trabajo incluyó la creación de aplicaciones web full-stack utilizando React, administración de bases de datos (SQL, MySQL), mantenimiento de software y administración de Windows Server. Las tecnologías utilizadas incluyen React, PHP y MySQL."
-      }
-    ],
-    "education": [
-      {
-        "institution": "Tecnologico de Monterrey",
-        "area": "Ingeniero en tecnologias electronicas",
-        "studyType": "Carrera",
-        "startDate": "2010-06-01",
-        "endDate": "2015-06-01",
-        "score": "8.5"
-      },
-      {
-        "institution": "영남대학교 (Yeungnam University)",
-        "area": "Ciencias computacionales",
-        "studyType": "Programa de intercambio internacional",
-        "startDate": "2014-01-01",
-        "endDate": "2014-06-01",
-        "score": "8.0"
-      }
-    ],
-    "skills": [
-      {
-        "name": "Full Stack Development"
-      },
-      {
-        "name": "Javascript / Typescript"
-      },
-      {
-        "name": "C#"
-      },
-      {
-        "name": "React"
-      },
-      {
-        "name": "Nextjs"
-      },
-      {
-        "name": "Astro"
-      },
-      {
-        "name": "Angular"
-      },
-      {
-        "name": "Vue"
-      },
-      {
-        "name": "Blazor"
-      },
-      {
-        "name": "NodeJs"
-      },
-      {
-        "name": "ExpressJs"
-      },
-      {
-        "name": "Nestjs"
-      },
-      {
-        "name": "PostgreSQL"
-      },
-      {
-        "name": "MongoDB"
-      },
-      {
-        "name": "Golang"
-      }
-    ],
-    "languages": [{
-      "language": "English",
-      "fluency": "Native speaker"
-    }],
-    "projects": [
-      {
-        "name": "Condo App",
-        "url": "https://github.com/AlanBar13/condo-server",
-        "description": "Una aplicación fullstack para gestionar fraccionamientos. Proporciona herramientas a los administradores para gestionar las propiedades, enviar notificaciones, anuncios y solicitudes de visitantes.",
-        "highlights": [
-          "Nextjs",
-          "Nestjs",
-          "PostgreSQL"
-        ],
-        "isActive": true
-      },
-      {
-        "name": "FOS (Food Order System)",
-        "url": "https://github.com/AlanBar13/FOS",
-        "description": "Una aplicación fullstack para gestionar los pedidos de comida de los restaurantes en la ciudad de Querétaro, México. La app es utilizada por los restaurantes para administrar sus pedidos y pagos. También cuenta con un panel de control que permite a los restaurantes ver el estado de sus pedidos y pagos.",
-        "highlights": [
-          "React",
-          "NodeJs",
-          "PostgreSQL"
-        ],
-        "isActive": false
-      },
-      {
-        "name": "BOLXS tickets",
-        "url": "https://github.com/AlanBar13/bolxs-app-nextjs",
-        "description": "Desarrollé un sistema full-stack para la distribución y compra de boletos de conciertos, que incluye funciones de creación y gestión de eventos, carrito de compras, gestión de pedidos en tiempo real e integración de pagos en línea con PayPal.",
-        "highlights": [
-          "Nextjs",
-          "Golang",
-          "PostgreSQL"
-        ],
-        "isActive": false
+        "network": "Github",
+        "username": "AlanBar13",
+        "url": "https://github.com/AlanBar13"
       }
     ]
-  }
+  },
+  "work": [
+    {
+      "name": "GE Aerospace",
+      "position": "Software Engineer",
+      "startDate": "2022-09-20",
+      "endDate": null,
+      "summary": "Parte del equipo responsable del modulo de Event Review en el Aviation Insights Portal."
+    },
+    {
+      "name": "Solo Trucking",
+      "position": "Full Stack Developer",
+      "startDate": "2021-07-12",
+      "endDate": "2022-09-01",
+      "summary": "Desarrollo y soporte de sistemas de gestión de carga, incluyendo el diseño e implementación de características y servicios full-stack escalables y altamente disponibles, implementados mediante pipelines de CI/CD. Las responsabilidades abarcan todo el ciclo de ingeniería, desde la planificación de proyectos, el diseño de características y la implementación. Además, desempeñé el rol de Líder de Equipo para el proyecto del nuevo sistema de gestión de carga y la refactorización del proyecto de la aplicación SOLO, contribuyendo también a la planificación de infraestructura tecnológica y evaluación de requisitos. Las tecnologías utilizadas incluyen Node.js para el desarrollo backend, Vue para el frontend, y plataformas de despliegue como Heroku y AWS (S3, Lambda), además de React Native para soluciones móviles."
+    },
+    {
+      "name": "Huawei Latinoamerica",
+      "position": "Site Reliability Engineer",
+      "startDate": "2020-03-12",
+      "endDate": "2021-07-01",
+      "summary": "Brindé soporte para la Tecnología de Almacenamiento en la Nube de Huawei, específicamente como soporte de Nivel 2 para el Servicio de Volumen Elástico, con tareas que incluyeron el desarrollo de scripts de automatización, creación de dashboards e integración de API. Las responsabilidades adicionales incluyeron manejo de tickets y alarmas, gestión de cambios y administración de servidores Linux. Las tecnologías utilizadas incluyeron OpenStack, Python y scripting en Shell."
+    },
+    {
+      "name": "Tecnologico de Monterrey",
+      "position": "Especialista de TI",
+      "startDate": "2016-09-12",
+      "endDate": "2020-03-01",
+      "summary": "Responsable del desarrollo, mantenimiento y soporte de software oficial, páginas web y bases de datos, además de brindar soporte técnico para servidores físicos y virtuales. El trabajo incluyó la creación de aplicaciones web full-stack utilizando React, administración de bases de datos (SQL, MySQL), mantenimiento de software y administración de Windows Server. Las tecnologías utilizadas incluyen React, PHP y MySQL."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Tecnologico de Monterrey",
+      "area": "Ingeniero en tecnologias electronicas",
+      "studyType": "Carrera",
+      "startDate": "2010-06-01",
+      "endDate": "2015-06-01",
+      "score": "8.5"
+    },
+    {
+      "institution": "영남대학교 (Yeungnam University)",
+      "area": "Ciencias computacionales",
+      "studyType": "Programa de intercambio internacional",
+      "startDate": "2014-01-01",
+      "endDate": "2014-06-01",
+      "score": "8.0"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Full Stack Development"
+    },
+    {
+      "name": "Javascript / Typescript"
+    },
+    {
+      "name": "C#"
+    },
+    {
+      "name": "React"
+    },
+    {
+      "name": "Nextjs"
+    },
+    {
+      "name": "Astro"
+    },
+    {
+      "name": "Angular"
+    },
+    {
+      "name": "Vue"
+    },
+    {
+      "name": "Blazor"
+    },
+    {
+      "name": "NodeJs"
+    },
+    {
+      "name": "ExpressJs"
+    },
+    {
+      "name": "Nestjs"
+    },
+    {
+      "name": "PostgreSQL"
+    },
+    {
+      "name": "MongoDB"
+    },
+    {
+      "name": "Golang"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Condo App",
+      "url": "https://github.com/AlanBar13/condo-server",
+      "description": "Una aplicación fullstack para gestionar fraccionamientos. Proporciona herramientas a los administradores para gestionar las propiedades, enviar notificaciones, anuncios y solicitudes de visitantes.",
+      "highlights": ["Nextjs", "Nestjs", "PostgreSQL"],
+      "isActive": true
+    },
+    {
+      "name": "FOS (Food Order System)",
+      "url": "https://github.com/AlanBar13/FOS",
+      "description": "Una aplicación fullstack para gestionar los pedidos de comida de los restaurantes en la ciudad de Querétaro, México. La app es utilizada por los restaurantes para administrar sus pedidos y pagos. También cuenta con un panel de control que permite a los restaurantes ver el estado de sus pedidos y pagos.",
+      "highlights": ["React", "NodeJs", "PostgreSQL"],
+      "isActive": false
+    },
+    {
+      "name": "BOLXS tickets",
+      "url": "https://github.com/AlanBar13/bolxs-app-nextjs",
+      "description": "Desarrollé un sistema full-stack para la distribución y compra de boletos de conciertos, que incluye funciones de creación y gestión de eventos, carrito de compras, gestión de pedidos en tiempo real e integración de pagos en línea con PayPal.",
+      "highlights": ["Nextjs", "Golang", "PostgreSQL"],
+      "isActive": false
+    }
+  ]
+}
