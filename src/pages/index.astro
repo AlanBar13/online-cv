@@ -51,24 +51,6 @@ const SOCIAL_ICONS: Record<string, any> = {
         </div>
       </a>
     </section>
-
-    <section class="experience">
-      <h2>Latest Experience</h2>
-      <div class="experience-grid">
-        {
-          latestWork.map((job) => (
-            <article class="experience-card">
-              <header>
-                <h3>{job.name}</h3>
-                <p class="position">{job.position}</p>
-              </header>
-              <p class="summary">{job.summary}</p>
-              <time>{new Date(job.startDate).getFullYear()} - {job.endDate ? new Date(job.endDate).getFullYear() : 'Present'}</time>
-            </article>
-          ))
-        }
-      </div>
-    </section>
   </main>
 
   <KeyboardManager />
