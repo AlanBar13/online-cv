@@ -1,11 +1,74 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import KeyboardManager from "@/components/KeyboardManager.astro";
+import GitHub from "@/components/icons/GitHub.astro";
+import LinkedIn from "@/components/icons/LinkedIn.astro";
+import { basics, work } from '@cv';
+
+const { name, label, summary, profiles, image } = basics;
+const latestWork = work.slice(0, 2);
+
+const SOCIAL_ICONS: Record<string, any> = {
+  Github: GitHub,
+  Linkedin: LinkedIn
+}
+
 ---
 
-<Layout title={`Alan Bardales`}>
+<Layout title={`Alan Bardales | Full Stack Developer`}>
   <main>
-    <h3>Use ctrl + k to open the keyboard manager</h3>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">{name.split(' ')[0]}</span> 👋</h1>
+        <p class="title">{label}</p>
+        <div class="social-links">
+          {profiles.map(({ network, url }) => {
+            const Icon = SOCIAL_ICONS[network];
+            return (
+              <a href={url} target="_blank" rel="noopener noreferrer" class="social-link">
+                <Icon />
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <section class="sections-grid">
+      <a href="/blog" class="section-card blog">
+        <div class="content">
+          <h2>Blog</h2>
+          <p>Read my thoughts and tutorials about web development, technology, and more.</p>
+          <span class="cta">View Posts →</span>
+        </div>
+      </a>
+
+      <a href="/portfolio" class="section-card portfolio">
+        <div class="content">
+          <h2>Portfolio</h2>
+          <p>Check out my latest projects and work experience in software development.</p>
+          <span class="cta">View Projects →</span>
+        </div>
+      </a>
+    </section>
+
+    <section class="experience">
+      <h2>Latest Experience</h2>
+      <div class="experience-grid">
+        {
+          latestWork.map((job) => (
+            <article class="experience-card">
+              <header>
+                <h3>{job.name}</h3>
+                <p class="position">{job.position}</p>
+              </header>
+              <p class="summary">{job.summary}</p>
+              <time>{new Date(job.startDate).getFullYear()} - {job.endDate ? new Date(job.endDate).getFullYear() : 'Present'}</time>
+            </article>
+          ))
+        }
+      </div>
+    </section>
   </main>
 
   <KeyboardManager />
@@ -13,8 +76,194 @@ import KeyboardManager from "@/components/KeyboardManager.astro";
 
 <style>
   main {
-    padding: 4rem;
-    margin: auto;
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .hero {
+    text-align: left;
+    padding: 6rem 0 4rem;
+  }
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    color: #1a1a1a;
+  }
+
+  .highlight {
+    color: #0070f3;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #666;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background: #f5f5f5;
+  }
+
+  .social-link:hover {
+    background: #0070f3;
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+
+  .section-card {
+    border-radius: 1rem;
+    padding: 2rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .section-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+    z-index: 1;
+  }
+
+  .section-card .content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .blog {
+    background-color: #0070f3;
+  }
+
+  .portfolio {
+    background-color: #00a3ff;
+  }
+
+  .section-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .section-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-card p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .cta {
+    font-weight: 500;
+  }
+
+  .experience {
+    margin: 4rem 0;
+  }
+
+  .experience h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .experience-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #eaeaea;
+    transition: all 0.3s ease;
+  }
+
+  .experience-card:hover {
+    border-color: #0070f3;
+    transform: translateY(-4px);
+  }
+
+  .experience-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #0070f3;
+  }
+
+  .experience-card .position {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
+  .experience-card .summary {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .experience-card time {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 2rem 0;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .title {
+      font-size: 1.2rem;
+    }
+
+    .sections-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section-card {
+      min-height: 200px;
+    }
   }
 </style>
