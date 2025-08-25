@@ -1,26 +1,29 @@
 ---
-import { Markdown } from '@astropub/md'
+import { Markdown } from "@astropub/md";
 import BlogLayout from "@/layouts/BlogLayout.astro";
 import fetchApi from "@/lib/strapi";
 import type Blog from "@/interfaces/blog";
 
 export async function getStaticPaths() {
-  const blogs = await fetchApi<Blog[]>({ endpoint: "blogs", wrappedByKey: "data" });
+  const blogs = await fetchApi<Blog[]>({
+    endpoint: "blogs",
+    wrappedByKey: "data",
+  });
 
   return blogs.map((blog) => ({
     params: { slug: blog.slug },
     props: blog,
-  }))
+  }));
 }
 
 type Props = Blog;
 const blog = Astro.props;
 
 function formatDate(dateStr: string) {
-  return new Date(dateStr).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
+  return new Date(dateStr).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
   });
 }
 ---
@@ -36,6 +39,14 @@ function formatDate(dateStr: string) {
       </div>
     </header>
     <div class="content">
+      <!-- Ezoic - incontent_5 - incontent_5 -->
+      <div id="ezoic-pub-ad-placeholder-115"></div>
+      <script is:inline>
+        ezstandalone.cmd.push(function () {
+          ezstandalone.showAds(115);
+        });
+      </script>
+      <!-- End Ezoic - incontent_5 - incontent_5 -->
       <Markdown of={blog.Content} />
     </div>
     <footer>
