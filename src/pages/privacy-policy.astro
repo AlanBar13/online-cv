@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+
+---
+
+<Layout title="Privacy Policy">
+	<main class="px-4">
+		<Section>
+			<h1 class="text-4xl font-bold mb-6">Privacy Policy</h1>
+			
+			<div class="space-y-6 text-pretty">
+				<p>Last updated: {new Date().toLocaleDateString()}</p>
+
+				<section>
+					<h2 class="text-2xl font-semibold mb-3">1. Introduction</h2>
+					<p>Welcome to Alan Bardales's portfolio website. This Privacy Policy explains how we collect, use, and protect any information you provide while using our website.</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold mb-3">2. Information We Collect</h2>
+					<p>We collect minimal information to improve your browsing experience:</p>
+					<ul class="list-disc list-inside ml-4 mt-2">
+						<li>Usage Data (pages visited, time spent on site)</li>
+						<li>Technical Data (browser type, device information)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold mb-3">3. How We Use Your Information</h2>
+					<p>The information we collect is used to:</p>
+					<ul class="list-disc list-inside ml-4 mt-2">
+						<li>Analyze website traffic and improve user experience</li>
+						<li>Monitor and prevent technical issues</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold mb-3">4. Data Security</h2>
+					<p>We implement appropriate security measures to protect your information. However, no method of transmission over the internet is 100% secure.</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold mb-3">5. Third-Party Services</h2>
+					<p>Our website may use third-party services that collect information. These services have their own privacy policies.</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold mb-3">6. Contact Information</h2>
+					<p>If you have questions about this Privacy Policy, please contact us through the contact information provided on our website.</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold mb-3">7. Changes to This Policy</h2>
+					<p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+				</section>
+			</div>
+		</Section>
+	</main>
+</Layout>
