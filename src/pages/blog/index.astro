@@ -33,14 +33,14 @@ const sortOptions = [
 <BlogLayout title="Alan Bardales | Blog">
   <header class="blog-header">
     <h1>Latest Articles</h1>
-    <div class="sort-control">
+    <!-- <div class="sort-control">
       <label for="sort">Sort by:</label>
       <select id="sort" class="sort-select">
         {sortOptions.map(option => (
           <option value={option.value}>{option.label}</option>
         ))}
       </select>
-    </div>
+    </div> -->
   </header>
 
   {featuredBlogs.length > 0 && (
@@ -53,8 +53,8 @@ const sortOptions = [
               <h2>
                 <a href={`/blog/${blog.slug}`}>{blog.Title}</a>
               </h2>
-              <time datetime={blog.publishedAt}>
-                {formatDate(blog.publishedAt)}
+              <time datetime={blog.createdAt}>
+                {formatDate(blog.createdAt)}
               </time>
               {blog.Extract && (
                 <p class="preview">{blog.Extract.slice(0, 150)}...</p>
@@ -79,8 +79,8 @@ const sortOptions = [
             <h2>
               <a href={`/blog/${blog.slug}`}>{blog.Title}</a>
             </h2>
-            <time datetime={blog.publishedAt}>
-              {formatDate(blog.publishedAt)}
+            <time datetime={blog.createdAt}>
+              {formatDate(blog.createdAt)}
             </time>
             {blog.Extract && (
               <p class="preview">{blog.Extract.slice(0, 150)}...</p>
